@@ -10,6 +10,7 @@ void setup() {
     .tx_io = GPIO_NUM_27, // กำหนดขา TX ต่อกับ 26
     .rx_io = GPIO_NUM_26, // กำหนดขา TX ต่อกับ 27
     .clkout_io = ((gpio_num_t) - 1),
+    
     .bus_off_io = ((gpio_num_t) - 1),
     .tx_queue_len = 5,
     .rx_queue_len = 5,
@@ -49,5 +50,5 @@ void loop() {
     Serial.println("Failed to queue message for transmission");
   }
 
-  delay(5000);
+  delay(1000);
 }
